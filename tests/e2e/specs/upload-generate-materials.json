@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "upload-generate-materials",
+    "kind": "interactive",
+    "goal": "上传一张图片，用默认 58×58 与 17 色生成图案，看到带编号的格子与材料清单",
+    "requirementIndexes": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      13,
+      14,
+      16,
+      17,
+      19,
+      20,
+      21,
+      23,
+      24,
+      26,
+      27
+    ],
+    "acceptanceCriteriaIndexes": [
+      0,
+      1,
+      4,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "steps": [
+      "Upload fixtures/beads.png to the image upload area",
+      "Press 一键生成",
+      "Press 3 清单"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "58×58"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "17 色"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "图案预览"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "点击任意格子可改色"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "94"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "所需材料"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "建议购买"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "浅黄橙"
+      }
+    ],
+    "fixtures": [
+      {
+        "kind": "png",
+        "name": "beads.png"
+      }
+    ]
+  }
+}

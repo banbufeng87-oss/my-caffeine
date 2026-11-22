@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T20:04:26.902Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"29×29\"",
+        "target": {
+          "role": "button",
+          "name": "29×29"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "grid-29-and-recolor.e2e.ts::grid-29-and-recolor",
+      "targetId": "web",
+      "instructionDigest": "ade825ad5f94a174ac0050e4be3164594b34d1e4fb8a7ce6dae39eb2df9a10c4",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped the 29×29 grid size button; it is now pressed and 58×58 is no longer pressed. Did not press 一键生成.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "29×29",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "58×58"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "29×29"
+      },
+      {
+        "role": "button",
+        "name": "58×58",
+        "states": [
+          "pressed"
+        ]
+      }
+    ],
+    "endWaitMs": 10670,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

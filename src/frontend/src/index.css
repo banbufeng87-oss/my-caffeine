@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/assets/fonts/SpaceGrotesk.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/assets/fonts/GeistMono.woff2") format("woff2");
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --font-display: "Space Grotesk", "PingFang SC", "Noto Sans SC", sans-serif;
+    --font-body: "Figtree", "PingFang SC", "Noto Sans SC", sans-serif;
+    --font-mono: "Geist Mono", ui-monospace, monospace;
+    --radius: 0.875rem;
+
+    /* Warm craft-studio paper */
+    --background: 0.985 0.006 85;
+    --foreground: 0.2 0.014 50;
+    --card: 1 0.003 85;
+    --card-foreground: 0.2 0.014 50;
+    --popover: 1 0.003 85;
+    --popover-foreground: 0.2 0.014 50;
+
+    /* Terracotta clay primary */
+    --primary: 0.55 0.155 38;
+    --primary-foreground: 0.985 0.006 38;
+
+    --secondary: 0.935 0.012 80;
+    --secondary-foreground: 0.3 0.02 50;
+    --muted: 0.945 0.01 80;
+    --muted-foreground: 0.5 0.016 55;
+
+    /* Teal secondary accent */
+    --accent: 0.58 0.1 180;
+    --accent-foreground: 0.985 0.006 180;
+
+    --destructive: 0.55 0.2 25;
+    --destructive-foreground: 0.985 0.006 25;
+    --success: 0.58 0.14 150;
+    --success-foreground: 0.985 0.006 150;
+    --warning: 0.72 0.14 75;
+    --warning-foreground: 0.22 0.03 75;
+
+    --border: 0.9 0.012 80;
+    --input: 0.9 0.012 80;
+    --ring: 0.55 0.155 38;
+
+    /* Bead palette swatches (chart) */
+    --chart-1: 0.58 0.19 30;
+    --chart-2: 0.7 0.15 85;
+    --chart-3: 0.6 0.13 165;
+    --chart-4: 0.55 0.14 250;
+    --chart-5: 0.62 0.16 330;
+
+    --sidebar: 0.975 0.008 80;
+    --sidebar-foreground: 0.2 0.014 50;
+    --sidebar-primary: 0.55 0.155 38;
+    --sidebar-primary-foreground: 0.985 0.006 38;
+    --sidebar-accent: 0.935 0.012 80;
+    --sidebar-accent-foreground: 0.3 0.02 50;
+    --sidebar-border: 0.9 0.012 80;
+    --sidebar-ring: 0.55 0.155 38;
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      oklch(0.6 0.16 42),
+      oklch(0.52 0.15 32)
+    );
+    --shadow-subtle: 0 1px 2px 0 oklch(0.2 0.02 50 / 0.06);
+    --shadow-elevated: 0 8px 24px -8px oklch(0.2 0.02 50 / 0.14);
+  }
+
+  .dark {
+    --background: 0.17 0.012 60;
+    --foreground: 0.94 0.008 80;
+    --card: 0.21 0.014 60;
+    --card-foreground: 0.94 0.008 80;
+    --popover: 0.23 0.014 60;
+    --popover-foreground: 0.94 0.008 80;
+
+    --primary: 0.7 0.14 42;
+    --primary-foreground: 0.17 0.012 42;
+
+    --secondary: 0.25 0.016 60;
+    --secondary-foreground: 0.88 0.008 80;
+    --muted: 0.25 0.016 60;
+    --muted-foreground: 0.62 0.012 70;
+
+    --accent: 0.68 0.1 180;
+    --accent-foreground: 0.17 0.012 180;
+
+    --destructive: 0.62 0.18 25;
+    --destructive-foreground: 0.17 0.012 25;
+    --success: 0.66 0.14 150;
+    --success-foreground: 0.17 0.012 150;
+    --warning: 0.76 0.13 80;
+    --warning-foreground: 0.17 0.012 80;
+
+    --border: 0.3 0.016 60;
+    --input: 0.3 0.016 60;
+    --ring: 0.7 0.14 42;
+
+    --chart-1: 0.66 0.17 30;
+    --chart-2: 0.76 0.14 85;
+    --chart-3: 0.68 0.12 165;
+    --chart-4: 0.64 0.13 250;
+    --chart-5: 0.7 0.15 330;
+
+    --sidebar: 0.21 0.014 60;
+    --sidebar-foreground: 0.94 0.008 80;
+    --sidebar-primary: 0.7 0.14 42;
+    --sidebar-primary-foreground: 0.17 0.012 42;
+    --sidebar-accent: 0.25 0.016 60;
+    --sidebar-accent-foreground: 0.88 0.008 80;
+    --sidebar-border: 0.3 0.016 60;
+    --sidebar-ring: 0.7 0.14 42;
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      oklch(0.74 0.14 46),
+      oklch(0.66 0.14 34)
+    );
+    --shadow-subtle: 0 1px 2px 0 oklch(0 0 0 / 0.3);
+    --shadow-elevated: 0 8px 24px -8px oklch(0 0 0 / 0.5);
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+  /* 烫后效果：熔合豆子的塑料光泽高光 */
+  .bead-fused {
+    box-shadow: inset 0 1px 1px oklch(1 0 0 / 0.45), inset 0 -1px 2px
+      oklch(0 0 0 / 0.18);
+  }
+  .bead-fused::after {
+    content: "";
+    position: absolute;
+    inset: 12% 18% 55% 18%;
+    border-radius: 9999px;
+    background: linear-gradient(
+      to bottom,
+      oklch(1 0 0 / 0.55),
+      oklch(1 0 0 / 0)
+    );
+    pointer-events: none;
+  }
+}

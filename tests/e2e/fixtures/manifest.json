@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "fixtures": [
+    {
+      "name": "beads.png",
+      "kind": "png",
+      "bytes": 77158,
+      "sha256": "993147a331cce5914e977a083a98dab4eb09508d0e1ccc7c1c84bb28f79ffdd5",
+      "spec": {
+        "kind": "png",
+        "name": "beads.png"
+      }
+    }
+  ]
+}

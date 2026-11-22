@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T20:04:48.299Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"0\" into spinbutton \"自定义宽度\"",
+        "target": {
+          "role": "spinbutton",
+          "name": "自定义宽度"
+        },
+        "value": "0"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "invalid-custom-size.e2e.ts::invalid-custom-size",
+      "targetId": "web",
+      "instructionDigest": "7868cec72eaec415645a84dcc768c3cda069581875b0703fba9c2ad061f9e35a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Set custom width to 0; the app showed the validation alert \"请输入 1–200 之间的正整数宽高\" and disabled the 一键生成 button, so pressing it was not possible (invalid input correctly rejected).",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "请输入 1–200 之间的正整数宽高"
+      },
+      {
+        "role": "spinbutton",
+        "name": "自定义宽度",
+        "value": "0"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "spinbutton",
+        "name": "自定义宽度",
+        "value": "40"
+      }
+    ],
+    "endWaitMs": 25964,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

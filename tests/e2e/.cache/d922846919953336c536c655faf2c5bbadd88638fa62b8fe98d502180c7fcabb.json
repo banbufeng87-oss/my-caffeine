@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T20:07:18.026Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"一键生成\"",
+        "target": {
+          "role": "button",
+          "name": "一键生成"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "upload-generate-materials.e2e.ts::upload-generate-materials",
+      "targetId": "web",
+      "instructionDigest": "309ef8b0f621ffe7bf30849c4bb152eb34895ba9830c4074360ed30666a208c4",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Pressed 一键生成. The pattern preview section \"图案预览\" appeared with a 58×58 grid of colored cells (e.g. 第 1 行第 1 列，颜色 94 浅黄橙), plus 缩小/放大 controls. Did not press 3 清单.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "生成"
+      },
+      {
+        "role": "heading",
+        "name": "图案预览"
+      },
+      {
+        "text": "点击任意格子可改色"
+      },
+      {
+        "role": "button",
+        "name": "缩小"
+      },
+      {
+        "text": "14px"
+      },
+      {
+        "role": "button",
+        "name": "放大"
+      },
+      {
+        "role": "button",
+        "name": "第 1 行第 1 列，颜色 94 浅黄橙"
+      },
+      {
+        "role": "button",
+        "name": "第 1 行第 2 列，颜色 94 浅黄橙"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "还没有生成图案"
+      },
+      {
+        "text": "上传图片并点击「一键生成」，这里会显示图案预览与材料清单"
+      },
+      {
+        "text": "小贴士：使用 5mm 拼豆 · 150–160°C 熨烫 10–15 秒"
+      },
+      {
+        "role": "link",
+        "name": "© 2026. Built with love using caffeine.ai"
+      },
+      {
+        "role": "button",
+        "name": "2 生成",
+        "text": "生成"
+      }
+    ],
+    "endWaitMs": 15082,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T20:07:56.161Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"一键生成\"",
+        "target": {
+          "role": "button",
+          "name": "一键生成"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "grid-29-and-recolor.e2e.ts::grid-29-and-recolor",
+      "targetId": "web",
+      "instructionDigest": "62e3d31fd0514d041e31104c289c6558bc301355f44d497f9c706940c756cb83",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Pressed 一键生成; the pattern preview appeared with a 29×29 grid of cells (e.g. \"第 1 行第 1 列，颜色 94 浅黄橙\"), plus 缩小/放大 controls and the hint \"点击任意格子可改色\". Did not press any cell.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "生成"
+      },
+      {
+        "role": "heading",
+        "name": "图案预览"
+      },
+      {
+        "text": "点击任意格子可改色"
+      },
+      {
+        "role": "button",
+        "name": "缩小"
+      },
+      {
+        "text": "14px"
+      },
+      {
+        "role": "button",
+        "name": "放大"
+      },
+      {
+        "text": "29×29 · 1×1 模板 · 共 1 块"
+      },
+      {
+        "role": "button",
+        "name": "打印图案"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "还没有生成图案"
+      },
+      {
+        "text": "上传图片并点击「一键生成」，这里会显示图案预览与材料清单"
+      },
+      {
+        "role": "button",
+        "name": "2 生成",
+        "text": "生成"
+      }
+    ],
+    "endWaitMs": 14370,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

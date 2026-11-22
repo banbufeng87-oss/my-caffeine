@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "flows": {
+    "grid-29-and-recolor": {
+      "flowId": "grid-29-and-recolor",
+      "specDigest": "d441e7e2860152ce54fc1ec0e9230bc139a951bf85ffc043f45f99d5a6063021",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T20:16:05.431Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "f3e4531b4d60a90f9e28f18dde99bbebe162fd2596438b7ac3f22d97f8c52b84.json",
+        "2506efa07ea0f6a27f122c0fcfede4c0ea0fac093860a351387eb6fb03d1b31a.json",
+        "dd4da268da19290cec87e0be5c016b15d29b276ddd3a3ae72e17713569aa0d9f.json",
+        "220f8b1c42edcdda19503b1483b450a592c13128b2008c538510601aed250b46.json"
+      ],
+      "ranAfter": [
+        "upload-generate-materials"
+      ],
+      "ranWith": [
+        "upload-generate-materials"
+      ],
+      "readOnly": true
+    },
+    "invalid-custom-size": {
+      "flowId": "invalid-custom-size",
+      "specDigest": "646b5e5e0851750ba5fa6a5d89f4824d7f9867a1bce7dba8adc882502e63d327",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T20:16:05.441Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "4a663837c97269f735f90ab999e71e366b11ed083b607d9d53c2d76d31083d7d.json",
+        "23c4bbb9d6e353b93044126b4f74da2d8a2cbf46f516ba10f34b8f3b73fc8bac.json",
+        "70739bc46710440babf5f729903d1a8b66f6f6ed9779fab601782fabcb66f25e.json"
+      ],
+      "ranAfter": [
+        "grid-29-and-recolor",
+        "upload-generate-materials"
+      ],
+      "ranWith": [
+        "grid-29-and-recolor",
+        "upload-generate-materials"
+      ],
+      "readOnly": true
+    },
+    "upload-generate-materials": {
+      "flowId": "upload-generate-materials",
+      "specDigest": "127add42806745c27a82096a2910fedf8c585c9afa0ced02058df883825ece43",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T20:16:05.430Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "3e0d68922f0407f5518a420dd2eee4fbe87faf48a5da0c3747279f6fe7bd1b5e.json",
+        "d922846919953336c536c655faf2c5bbadd88638fa62b8fe98d502180c7fcabb.json"
+      ],
+      "noChangeSteps": [
+        2
+      ],
+      "ranAfter": [],
+      "ranWith": [],
+      "readOnly": true
+    }
+  }
+}

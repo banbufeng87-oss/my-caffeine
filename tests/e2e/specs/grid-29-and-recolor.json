@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "grid-29-and-recolor",
+    "kind": "interactive",
+    "goal": "用 29×29 网格生成图案，点格子打开调色板改色",
+    "requirementIndexes": [
+      4,
+      8,
+      12,
+      15,
+      18,
+      22,
+      25
+    ],
+    "acceptanceCriteriaIndexes": [
+      3,
+      5,
+      8
+    ],
+    "steps": [
+      "Upload fixtures/beads.png to the image upload area",
+      "Select the 29×29 grid size",
+      "Press 一键生成",
+      "Press the first cell of the pattern"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "58×58"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "29×29"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "图案预览"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "点击任意格子可改色"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "替换这一格的颜色"
+      }
+    ],
+    "fixtures": [
+      {
+        "kind": "png",
+        "name": "beads.png"
+      }
+    ]
+  }
+}

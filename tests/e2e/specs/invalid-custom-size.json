@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "invalid-custom-size",
+    "kind": "interactive",
+    "goal": "自定义宽高输入非法值时提示并阻止生成",
+    "requirementIndexes": [
+      6
+    ],
+    "acceptanceCriteriaIndexes": [
+      2,
+      6
+    ],
+    "steps": [
+      "Upload fixtures/beads.png to the image upload area",
+      "Select the custom grid size",
+      "Set the width to 0 and press 生成图案"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "58×58"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "自定义"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "正整数"
+      }
+    ],
+    "fixtures": [
+      {
+        "kind": "png",
+        "name": "beads.png"
+      }
+    ]
+  }
+}

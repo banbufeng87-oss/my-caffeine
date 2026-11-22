@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T20:10:53.608Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "upload",
+        "summary": "upload \"fixtures/beads.png\" to button (1 of 2)",
+        "target": {
+          "role": "button",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        },
+        "paths": [
+          "fixtures/beads.png"
+        ]
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "grid-29-and-recolor.e2e.ts::grid-29-and-recolor",
+      "targetId": "web",
+      "instructionDigest": "bbd0087d4658b7a15476598cd59711e9c04f58ab974cbb4ab2237c4698e3a025",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Uploaded fixtures/beads.png to the image upload area. The page now shows the uploaded preview, filename \"beads.png\", \"原图已就绪，可继续设置参数\", and the 一键生成 button is enabled.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "上传"
+      },
+      {
+        "role": "image",
+        "name": "已上传的原图预览"
+      },
+      {
+        "text": "beads.png"
+      },
+      {
+        "text": "原图已就绪，可继续设置参数"
+      },
+      {
+        "role": "button",
+        "name": "重新选择"
+      },
+      {
+        "role": "button",
+        "name": "移除图片"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "把图片拖到这里"
+      },
+      {
+        "text": "支持 JPG、PNG、WebP 等常见图片格式"
+      },
+      {
+        "role": "button",
+        "name": "从相册选择"
+      },
+      {
+        "role": "button",
+        "name": "拍照"
+      },
+      {
+        "text": "请先上传图片，再生成图案"
+      },
+      {
+        "role": "button",
+        "name": "1 上传",
+        "text": "上传"
+      }
+    ],
+    "endWaitMs": 10783,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "truncated": true
+  }
+}
